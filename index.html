@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Google Page</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  
+  
+  
+<body>
+  <header>
+  <div id="nav-container">
+    <nav>
+      <a href="https://accounts.google.com/v3/signin/accountchooser?emr=1&ltmpl=default&nojavascript=1&rm=false&service=mail&ss=1&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AdBytiOyvgqU7-diTWpIa1WYqLFqhbAC1myQDJjFlcSfK262CaNjLd3P_bK3q-0-4S1C88uIKfxZ&dsh=S169453276%3A1750606998210548">Gmail</a>
+      <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+      <a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fdrive.google.com%2F&emr=1&followup=https%3A%2F%2Fdrive.google.com%2F&ifkv=AdBytiNGho3SPqM8CWShe_MStxQxMXq43QWTGhpWEZ8FJKYgWoWM4UCQAVr6r13t0khNOSu6omiw&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-400181928%3A1750607253024903">
+        <button class="nav-btn">
+          <img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/Google%20Drive%20logo.png?v=1750607195027" class="nav-images">
+        </button>
+      </a>
+      <a href="https://www.linkedin.com/in/jordan-mobley-8622a5148/">
+        <button class="nav-btn">
+          <img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/LinkedIn%20Old%20Profile%20Pic.jpeg?v=1750281310903" class="nav-images" id="circular">
+        </button>
+      </a>
+    </nav>  
+  </div>
+  </header>
+  
+  <section>
+    <img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/Google%20Logo%20record.webp?v=1750597458005" id="google-logo">
+      <form>
+        <div class="search-bar-container">
+          <span><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/Magnify%20Glass.webp?v=1750587212672" class="form-images"></span>
+          <input type="text" id="search-bar" placeholder="Search for any R2H staff member by first and last name">
+          <button id="search-btn">Search</button>      
+          <span><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/Google%20Mic%20Icon.webp?v=1750587204094" class="form-images"></span>
+          <span><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/Google%20Camera%20Icon.png?v=1750587198495" class="form-images"></span>
+        </div>
+      </form>
+  </section>
+  
+  
+  <div id="btn-container">
+    <a href="https://www.roadtohire.org/">
+      <button class="btn-design"><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/roadtohire_logo.jpeg?v=1750588509485" id="r2h-logo" class="btn-logo-links"></button>
+    </a> 
+    <a href="https://www.redventures.com/">
+      <button class="btn-design"><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/RV%20Logo.jpeg?v=1750588516090" id="red-ventures-logo" class="btn-logo-links"></button>
+    </a> 
+    <a href="https://www.linkedin.com/in/latorimiller/">
+      <button class="btn-design"><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/Linkedin%20Logo.webp?v=1750588496231" id="linkedin-logo" class="btn-logo-links"></button>
+    </a>  
+    <a href="https://www.youtube.com/">  
+      <button class="btn-design"><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/Youtube%20logo.jpg?v=1750588524061" id="youtube-logo" class="btn-logo-links"></button>
+    </a>  
+    <a href="https://accounts.google.com/v3/signin/accountchooser?emr=1&ltmpl=default&nojavascript=1&rm=false&service=mail&ss=1&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AdBytiOyvgqU7-diTWpIa1WYqLFqhbAC1myQDJjFlcSfK262CaNjLd3P_bK3q-0-4S1C88uIKfxZ&dsh=S169453276%3A1750606998210548">  
+      <button class="btn-design"><img src="https://cdn.glitch.global/23b8ef68-14cc-4ce7-82c1-f5abc5b55080/gmail%20logo.webp?v=1750588489436" id="gmail-logo" class="btn-logo-links"></button>
+    </a>
+      </div>
+  
+  
+<footer id="footer"> 
+  <p>
+    &copy; R2H Google Landing Page Project - Jordan Mobley C17 Coding Apprentice 2025 &copy; 
+  </p>
+</footer>
+  
+  
+  <script>
+  function searchFunction() {
+    const query = document.getElementById('search-bar').value; 
+    if (query.trim() !== '') {
+      alert("You searched for: " + query);
+    } else {
+        alert("Please enter a search term.");
+      }
+}
+document.getElementById('search-btn').addEventListener('click', searchFunction);
+
+
+
+</script>
+</body>
+  
+  
+  
+  
+  
+  
+
+</html>
